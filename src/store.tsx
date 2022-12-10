@@ -20,7 +20,4 @@ export const useData = create<DataType>((set, get) => ({
 
 fetch('https://jsonplaceholder.typicode.com/users/1')
     .then(res => res.json())
-    .then(data => useData.setState((state) => ({
-        ...state,
-        name: data.name
-    })))
+    .then(data => useData.getState().nameSet(data.name))
