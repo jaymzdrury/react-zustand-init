@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Fragment} from 'react'
+import {useData} from './store'
 
 function App() {
+  const {name, nameSet, toggle, toggleSet, number, updateNum} = useData((state) => state)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Fragment>
+      <div>
+        {toggle ? name : ''}
+        <button onClick={() => nameSet('Leroy')}>CHANGE NAME</button>
+        <button onClick={() => toggleSet(!toggle)}>HIDE</button>
+      </div>
+      <button onClick={() => updateNum(10)}>{number}</button>
+    </Fragment>
+  )
 }
 
-export default App;
+export default App
