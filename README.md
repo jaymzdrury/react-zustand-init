@@ -1,6 +1,6 @@
 ## Zustand Set Up
 
-<img src="35338793?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2058&q=80" alt="Zustand" width="350" />
+<img src="https://images.unsplash.com/flagged/photo-1577313606065-b9bd99b3430a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJlYXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" alt="Zustand" width="350" />
 
 ### Setup
 
@@ -8,7 +8,7 @@
 
 ***
 
-an alternative to redux that does not require a provider
+### Add-ons
 
 _middleware_
 
@@ -22,7 +22,7 @@ _middleware_
 
 _setState_
 
-can also use setState instead of getState
+can also use setState instead of getState (store.tsx)
 
 ```JavaScript
     .then(data => useData.setState((state) => ({
